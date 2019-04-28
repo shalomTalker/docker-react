@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 before-install:
-  - docker build -t dockenigma/docker-react -f Dockerfile.dev .
+  - docker build -t docker-react -f Dockerfile.dev .
 
 script:
-  - docker run dockenigma/docker-react npm run test -- --coverage
+  - docker run docker-react npm run test -- --coverage
